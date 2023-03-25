@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results</h1>
+    <table th:if="${results!=null}">
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+                <th>Column 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="row : ${results}">
+                <td th:text="${row.getCell(0)}"></td>
+                <td th:text="${row.getCell(1)}"></td>
+                <td th:text="${row.getCell(2)}"></td>
+                <td th:text="${row.getCell(4)}"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div th:if="${error!=null}" th:text="${error}"></div>
+</body>
+</html>

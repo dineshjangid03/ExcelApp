@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Excel Search App</title>
+</head>
+<body>
+    <h1>Excel Search App</h1>
+    <form th:action="@{/search}" method="post">
+        <label for="query">Search:</label>
+        <input type="text" id="query" name="query" />
+        <button type="submit">Search</button>
+    </form>
+</body>
+</html>
