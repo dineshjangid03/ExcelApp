@@ -7,13 +7,13 @@ This endpoint renders the "search" view.
 
 ### Request Parameters
 
-None
+    None
 
 ### Response
 
-View name: "search"
+    View name: "search"
 
-Model attributes: None
+    Model attributes: None
 
 ```html
 POST http://localhost:8080/search
@@ -22,14 +22,14 @@ This endpoint performs a search based on the provided query parameter and render
 
 ### Request Parameters
 
-query (required): The search query.
+    query (required): The search query.
 
 ### Response
 
-View name: "searchResults"
+    View name: "searchResults"
 
-Model attributes:
+    Model attributes:
 
-"results": The Excel sheet containing the search results (if any).
+        "results": The Excel sheet containing the search results (if any).
 
-"error": An error message if no results were found.
+        "error": An error message if no results were found.
